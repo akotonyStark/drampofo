@@ -95,10 +95,10 @@
 							<span class="typer" id="main" data-words="working to keep you in good health" data-delay="100" data-deleteDelay="1000"></span>
 							<span class="cursor" data-owner="main"></span>
 						</p>
-						<div class="link-group" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap:10px">
-							<a class="btn-ghost" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Book Appointment</a>
-							<a class="btn-ghost" href="#">Hire Me</a>
-							<a class="btn-ghost" href="#">About Me</a>
+						<div class="link-group" >
+							<!-- <a class="btn-ghost" href="#service-section">Hire Me</a> -->
+							<a class="btn-ghost" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Book Me</a>
+							<a class="btn-ghost" href="#about-section">About Me</a>
 						</div>
 					</div>
 
@@ -334,12 +334,9 @@
 						        		<div class="content-wrapper">
 							        		<h2 class="item-title">My job</h2>
 							        		<p>
-							        			Working with good nurses in one of the great jobs of being a doctor
+							        			Working with good nurses is one of the great jobs of being a doctor
 											</p>
-							        		<p>
-							        			Duis aute irure dolor in reprehenderit in voluptate velit esse
-							        			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-							        		</p>
+							        		
 						        		</div>
 						        	</div>
 						        	<div class="col-xl-4">
@@ -1482,35 +1479,35 @@
 		<div class="modal-body">
 			<form class="row">
 				<div class="row">
-                    <div class="col">
+                    <div class="col-md-6">
                         <div class="mb-3">
-                            <label for="inputName" class="form-label">Full Name</label>
-							<input type="text" class="form-control" id="inputName" placeholder="Full name*" name="inputName" required>
+                            <label for="inputName" class="form-label">Full Name <span style="color:darkred">*</span></label>
+							<input type="text" class="form-control" id="inputName" placeholder="Full name" name="inputName" required>
                         </div>
                     </div>
                     <div class="col">
                         <div class="mb-3">
-                            <label for="inputEmail" class="form-label">Contact</label>
+                            <label for="inputEmail" class="form-label">Contact <span style="color:darkred">*</span></label>
 							<input type="phone" class="form-control" id="inputEmail" name="contact" placeholder="Phone*" required>
                         </div>
                     </div>
                 </div>
 				<div class="row">
-                    <div class="col">
+                    <div class="col-md-6">
                         <div class="mb-3">
-                            <label for="inputName" class="form-label">Date Of Birth</label>
+                            <label for="inputName" class="form-label">Date Of Birth <span style="color:darkred">*</span></label>
 						    <input type="date" class="form-control" id="dob"  name="dob" required>
                         </div>
                     </div>
                     <div class="col">
                         <div class="mb-3">
-                            <label for="inputEmail" class="form-label ">Email</label>
+                            <label for="inputEmail" class="form-label ">Email <span style="color:darkred">*</span></label>
 						    <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email" required>
                         </div>
                     </div>
                 </div>
 				<div class="row">
-                    <div class="col">
+                    <div class="col-md-6">
                         <div class="mb-3">
                             <label for="inputName" class="form-label">Address</label>
 						    <textarea class="form-control" id="address" placeholder="Address" name="address" required></textarea>
@@ -1518,8 +1515,8 @@
                     </div>
 					<div class="col">
                         <div class="mb-3">
-                            <label for="inputEmail" class="form-label">Symptoms</label>
-							<textarea class="form-control mb-3" id="inputMessage" name="inputMessage" placeholder="Describe your symptoms here..." required></textarea>
+                            <label for="inputEmail" class="form-label">Symptoms <span style="color:darkred">*</span></label>
+							<textarea class="form-control mb-3" id="symptoms" name="symptoms" placeholder="Describe your symptoms here..." required></textarea>
                         </div>
                     </div>
                     
@@ -1527,7 +1524,7 @@
 				<div class="row">
 					<div class="col">
                         <div class="mb-3">
-                            <label for="inputName" class="form-label">Appointment Date</label><br>
+                            <label for="inputName" class="form-label">Appointment Date <span style="color:darkred">*</span></label>
 						    <input type="date" class="form-control" id="appointmentDate" name="appointmentDate" required>
                         </div>
                     </div>
@@ -1547,7 +1544,7 @@
 		</div>
 		<div class="modal-footer">
 		  <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cancel</button>
-		  <button type="button" class="btn btn-success">Send</button>
+		  <button type="button" class="btn btn-success" data-bs-dismiss="modal">Send</button>
 		</div>
 	  </div>
 	</div>
